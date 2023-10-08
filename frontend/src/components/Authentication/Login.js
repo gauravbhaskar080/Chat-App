@@ -11,6 +11,7 @@ import {
 import axios from "axios";
 import { useToast } from "@chakra-ui/react";
 import { useHistory } from "react-router-dom";
+const ENDPOINT = "https://chat-app-8mi0.onrender.com";
 
 const Login = () => {
   const [show, setShow] = useState(false);
@@ -43,7 +44,7 @@ const Login = () => {
       };
 
       const { data } = await axios.post(
-        "/api/user/login",
+        `${ENDPOINT}/api/user/login`,
         { email, password },
         config
       );
