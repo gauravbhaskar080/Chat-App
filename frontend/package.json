@@ -2,7 +2,6 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://chat-app-8mi0.onrender.com",
   "dependencies": {
     "@chakra-ui/avatar": "^2.3.0",
     "@chakra-ui/button": "^2.1.0",
