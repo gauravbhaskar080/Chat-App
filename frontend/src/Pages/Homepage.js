@@ -13,7 +13,7 @@ import { useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import Login from "../components/Authentication/Login";
 import Signup from "../components/Authentication/Signup";
-
+import logo from "./logo.png";
 const Homepage = () => {
   const history = useHistory();
 
@@ -37,7 +37,7 @@ const Homepage = () => {
         textAlign="center"
       >
         <Text fontSize="4xl" fontFamily="Work sans">
-          Talk-A-Tive
+          <img src={logo} alt="My Image" />
         </Text>
       </Box>
       <Box

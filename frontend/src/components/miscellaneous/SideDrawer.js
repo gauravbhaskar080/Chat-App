@@ -31,6 +31,9 @@ import { Effect } from "react-notification-badge";
 import { getSender } from "../../config/ChatLogics";
 import UserListItem from "../userAvatar/UserListItem";
 import { ChatState } from "../../Context/ChatProvider";
+import "./styles.css";
+import logo from "./logo.png";
+
 const ENDPOINT = "https://chat-app-8mi0.onrender.com";
 function SideDrawer() {
   const [search, setSearch] = useState("");
@@ -149,7 +152,7 @@ function SideDrawer() {
           </Button>
         </Tooltip>
         <Text fontSize="2xl" fontFamily="Work sans">
-          Talk-A-Tive
+          <img src={logo} alt="My Image" />
         </Text>
         <div>
           <Menu>

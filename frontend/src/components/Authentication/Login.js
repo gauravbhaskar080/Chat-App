@@ -11,6 +11,7 @@ import {
 import axios from "axios";
 import { useToast } from "@chakra-ui/react";
 import { useHistory } from "react-router-dom";
+import { ChatState } from "../../Context/ChatProvider";
 const ENDPOINT = "https://chat-app-8mi0.onrender.com";
 
 const Login = () => {
@@ -21,6 +22,7 @@ const Login = () => {
   const [loading, setLoading] = useState(false);
   const toast = useToast();
   const history = useHistory();
+  const { setUser } = ChatState();
 
   const submitHandler = async () => {
     setLoading(true);
@@ -56,10 +58,10 @@ const Login = () => {
         isClosable: true,
         position: "bottom",
       });
-      // setUser(data);
+      setUser(data);
       localStorage.setItem("userInfo", JSON.stringify(data));
       setLoading(false);
-      history.push("/chats");
+      history.push(`/chats`);
     } catch (error) {
       toast({
         title: "Error Occured!",

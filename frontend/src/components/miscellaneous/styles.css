@@ -1,0 +1,15 @@
+.messages {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.iconButton{
+  display: flex;
+}
+
+.logo{
+  width: 50%;
+  height: auto;
+}

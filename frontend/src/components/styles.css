@@ -8,3 +8,7 @@
 .iconButton{
   display: flex;
 }
+
+.bg-img{
+  background-image: url("./bg.webp");
+}
