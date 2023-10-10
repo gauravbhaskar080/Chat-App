@@ -20,7 +20,7 @@ const Homepage = () => {
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem("userInfo"));
 
-    if (user) history.push("/chats");
+    if (user) history.push(`/chats`);
   }, [history]);
 
   return (
@@ -36,9 +36,16 @@ const Homepage = () => {
         borderWidth="1px"
         textAlign="center"
       >
-        <Text fontSize="4xl" fontFamily="Work sans">
-          <img src={logo} alt="My Image" />
-        </Text>
+        <div style={{ textAlign: "center" }}>
+          <Text fontSize="4xl" fontFamily="Work sans">
+            <img
+              src={logo}
+              alt="My Image"
+              width={"40%"}
+              style={{ marginLeft: "auto", marginRight: "auto" }}
+            />
+          </Text>
+        </div>
       </Box>
       <Box
         bg="white"

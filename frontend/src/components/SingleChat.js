@@ -15,6 +15,7 @@ import animationData from "../animations/typing.json";
 import io from "socket.io-client";
 import UpdateGroupChatModal from "./miscellaneous/UpdateGroupChatModal";
 import { ChatState } from "../Context/ChatProvider";
+import bgimg from "./bg.webp";
 
 // const ENDPOINT = "http://localhost:5000"; 
 const ENDPOINT = "https://chat-app-8mi0.onrender.com";
@@ -207,6 +208,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
             h="100%"
             borderRadius="lg"
             overflowY="hidden"
+            backgroundImage={bgimg}
           >
             {loading ? (
               <Spinner
@@ -241,7 +243,8 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
               )}
               <Input
                 variant="filled"
-                bg="#E0E0E0"
+                bg="white"
+                color="white"
                 placeholder="Enter a message.."
                 value={newMessage}
                 onChange={typingHandler}

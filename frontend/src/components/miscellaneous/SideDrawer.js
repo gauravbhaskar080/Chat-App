@@ -152,7 +152,7 @@ function SideDrawer() {
           </Button>
         </Tooltip>
         <Text fontSize="2xl" fontFamily="Work sans">
-          <img src={logo} alt="My Image" />
+          Gapshap
         </Text>
         <div>
           <Menu>
