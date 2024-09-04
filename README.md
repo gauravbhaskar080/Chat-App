@@ -20,7 +20,7 @@ This project is a real-time chat application built using the MERN (MongoDB, Expr
 
 ## Demo
 
-[Link to Demo](https://gauravbhaskar-chat-app.netlify.app/)
+[Link to Demo](https://gb-gapshap.vercel.app/)
 
 ## Setup
 
